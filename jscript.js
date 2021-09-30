@@ -13,7 +13,7 @@ const contain = document.querySelector('.container');
 //seasons/2021/competitions
 
 function upComingMatch(e) {
-  
+
   //match div 
   let everyMatch = document.createElement('div');
   everyMatch.classList.add('match');
@@ -72,13 +72,14 @@ function upComingMatch(e) {
   let team1div1 = document.createElement('div');
   team1div1.classList.add('team1');
   team1andteam2.appendChild(team1div1);
+  
   //name1 div
   let teamdiv1P = document.createElement('p');
-  teamdiv1P.setAttribute('id','name1');
+  teamdiv1P.setAttribute('id', 'name1');
   team1div1.appendChild(teamdiv1P);
   teamdiv1P.innerHTML = e.teama.name;
   let teamdiv1img = document.createElement('img');
-  teamdiv1img.setAttribute('id','logo1');
+  teamdiv1img.setAttribute('id', 'logo1');
   team1div1.appendChild(teamdiv1img);
   teamdiv1img.src = e.teama.logo_url;
 
@@ -93,14 +94,15 @@ function upComingMatch(e) {
   let teamdiv3 = document.createElement('div');
   teamdiv3.classList.add('team2');
   team1andteam2.appendChild(teamdiv3);
+
   //name2 
   let teamdiv3img = document.createElement('img');
-  teamdiv3img.setAttribute('id','logo2');
+  teamdiv3img.setAttribute('id', 'logo2');
   teamdiv3.appendChild(teamdiv3img);
   teamdiv3img.src = e.teamb.logo_url
 
   let teamdiv3P = document.createElement('p');
-  teamdiv3P.setAttribute('id','name2');
+  teamdiv3P.setAttribute('id', 'name2');
   teamdiv3.appendChild(teamdiv3P);
   teamdiv3P.innerHTML = e.teamb.name;
 
@@ -132,9 +134,7 @@ fetch(endPoint, {
     console.log('req res:' + result);
 
     let competetions = result['response'];
-    //console.log(competetions);
-    //console.log('cid:'+ competetions[0].cid);
-
+    
     const arr = [];
     arr.push(...competetions.matches);
     console.log('total match:' + arr.length);
