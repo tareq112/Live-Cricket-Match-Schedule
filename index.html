@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,91 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <nav>
-        <div>
-            <ul class="navList">
-                <li class="liveUpcoming">Live & Upcoming</li>
-                <li>Result</li>
-                <li>Calender</li>
-                <li>International</li>
-                <li>Select Country</li>
-            </ul>
+    <h1>Cricket Api</h1>
+    <div class="container">
+        <div class=navBar>
+            <div class="liveUp">
+                <a href="#">Live & Upcoming</a>
+            </div>
+            <div class="result">
+                <a href="#">Result</a>
+            </div>
+            <div class="calender">
+                <a href="#">Calender</a>
+            </div>
+            <div class="inter">
+                <select name="" id="type">
+                    <option value="">Type</option>
+                    <option value="int">International</option>
+                    <option value="doms">Domestic</option>
+                </select>
+            </div>
+            <div class="slcCountry">
+                <select name="" id="country">
+                    <option value="">Select Country</option>
+                    <option value="AF">Afghanistan</option>
+                    <option value="AU">Australia</option>
+                    <option value="BD">Bangladesh</option>
+                    <option value="EN">England</option>
+                    <option value="">India</option>
+                    <option value="">Ireland</option>
+                    <option value="">New zealand</option>
+                    <option value="">Pakistan</option>
+                    <option value="">South Africa</option>
+                    <option value="">Sri Lanka</option>
+                    <option value="">Wesindies</option>
+                    <option value="">Zimbabwe</option>
+                    <option value="">Scotland</option>
+                    <option value="">Neatherland</option>
+                    <option value="">Kenya</option>
+                    <option value="">United Arab Emirates</option>
+                    <option value="">Nepal</option>
+                    <option value="">Hong Kong</option>
+                    <option value="">Oman</option>
+                </select>
+            </div>
+
         </div>
-    </nav>
+        <div class="match">
+            <div class="stadiumDate">
+                <p class="stadium"></p>
+                <p class="mDate"></p>
+            </div>
+            
+            <div class="matchdetail">
+                <div class="liveOrupcoming">
+                    <div class="left-circle"></div>
+                    <div class="rigth-rect">
+                        <p id="liveorup">UPCOMING</p>
+                    </div>
+                    <div class="matchno"></div>
+                </div>
+                <div class="teams">
+                    <div class="team1">
+                        <p id="name1"></p>
+                        <img id="logo1" src="" alt="" srcset="">
+                    </div>
+
+                    <div class="vs">VS</div>
+
+                    <div class="team2">
+                        <img id="logo2" src="" alt="" srcset="">
+                        <p id="name2"></p>
+
+                    </div>
+                    <div class="time"></div>
+                </div>
+            </div>
+<hr>
+        </div>
+        
+    </div>
+
+
+
     <script src="jscript.js"></script>
 </body>
+
 </html>

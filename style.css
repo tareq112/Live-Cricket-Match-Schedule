@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+}
+
+.container{
+    background: rgb(240, 240, 240);
+}
+.navBar{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+/*----menu bar------*/
+.liveUp{
+  display: flex;
+  background: white;
+  padding: 12px 20px;
+  border-left: 1px  solid black;
+  border-top:1px  solid black ;
+  border-right: 1px  solid black;
+  border-radius: 7px 7px 0 0;
+
+}
+.liveUp a{
+    text-decoration: none;
+    color: black;
+}
+.result{
+    display: flex;
+    background: black;
+    padding: 13px;
+    margin-left: 3px;
+    color: white;
+    border-radius: 7px 7px 0 0;
+}
+.result a{
+    color: white;
+    text-decoration: none;
+}
+.calender{
+    display: flex;
+    background: black;
+    color: white;
+    padding: 13px;
+    border-radius: 7px 7px 0 0;
+}
+.calender a{
+    color: white;
+    text-decoration: none;
+}
+.inter{
+    display: flex;
+    background: white;
+    padding: 13px;
+    margin-left: 10px;
+    border-left: 1px  solid black;
+  border-top:1px  solid black ;
+  border-right: 1px  solid black;
+    border-radius: 7px 7px 0 0;
+}
+.slcCountry{
+    display: flex;
+    background: white;
+    padding: 13px;
+    margin-left: 20px;
+    border-left: 1px  solid black;
+    border-top:1px  solid black ;
+    border-right: 1px  solid black;
+    border-radius: 7px 7px 0 0;
+}
+#type,
+#country{
+    border:none ;
+}
+#type,
+#country:visited{
+    border:none ;
+}
+
+/*----match div------*/
+.match{
+    width: 750px;
+    margin: 0 auto ; 
+    background: rgb(238, 243, 243);
+    height: 17.5vh;
+}
+.stadiumDate{
+    align-items: center;
+    text-align: center;
+}
+.stadium,
+.mDate * p{
+    font-weight: 900;
+}
+
+/*-----match details-----*/
+.matchdetail{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.liveOrupcoming{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.left-circle{
+    width: 35px;
+    height: 35px;
+    background: rgb(8, 6, 6);
+    border-radius: 50%;
+}
+.rigth-rect{
+color: white;
+width: 80px;
+height: 25px;
+border-radius: 10px;
+background: rgb(15, 16, 19);
+text-align: center;
+top: 3%;
+left: -28px;
+position: relative;
+}
+.rigth-rect p{
+    margin-top:5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+}
+.matchno{
+    position:relative;
+    left: -20px;
+   max-width: 80px;
+    
+}
+
+.teams{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+#name1,
+#name2{
+    padding: 15px;
+    width: 120px;
+    
+}
+#name1 p{
+    width: 120px;
+    text-align: left;
+}
+#name2 p{
+    width: 120px;
+    text-align: right;
+}
+.team1{
+    display: flex;
+    
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+    
+}
+.vs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 50px;
+    font-weight: bold;
+}
+
+.team2{
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.time{
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    
+}
